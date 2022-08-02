@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Image Slider</h1>
+        <div class="slider">
+            <div class="images">
+                <img class="imgSlide" src="./1.jpeg">
+                <img class="imgSlide" src="./2.jpeg">
+                <img class="imgSlide" src="./3.jpeg">
+            </div>
+        </div>
+            <div class="progress">
+                <ul class="status">
+                    <li onclick="count=-610;licount=0;nextFunc()">•</li>
+                    <li onclick="count=0;licount=1;nextFunc()">•</li>
+                    <li onclick="count=-305;licount=2;nextFunc()">•</li>
+                </ul>
+            </div>
+            <div class="operations">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </div>
+        
+        <script src="./index.js" async defer></script>
+    </body>
+</html>
